@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Alunos</title>
+</head>
+<body>
+    <h2>Cadastro de Alunos</h2>
+    <form id="form-cadastro" action="processa.php" method="post">
+        <label for="matricula1">Matricula:</label>
+        <input type="text" name="matricula1" id="matricula1" required>
+        <label for="nome1">Nome:</label>
+        <input type="text" name="nome1" id="nome1" required>
+        <label for="sobrenome1">Sobrenome:</label>
+        <input type="text" name="sobrenome1" id="sobrenome1" required>
+        <label for="idade1">Idade:</label>
+        <input type="text" name="idade1" id="idade1" required><br><br>
+        
+        <label for="matricula2">Matricula:</label>
+        <input type="text" name="matricula2" id="matricula2" required>
+        <label for="nome2">Nome:</label>
+        <input type="text" name="nome2" id="nome2" required>
+        <label for="sobrenome2">Sobrenome:</label>
+        <input type="text" name="sobrenome2" id="sobrenome2" required>
+        <label for="idade2">Idade:</label>
+        <input type="text" name="idade2" id="idade2" required><br><br>
+        
+        <label for="matricula3">Matricula:</label>
+        <input type="text" name="matricula3" id="matricula3" required>
+        <label for="nome3">Nome:</label>
+        <input type="text" name="nome3" id="nome3" required>
+        <label for="sobrenome3">Sobrenome:</label>
+        <input type="text" name="sobrenome3" id="sobrenome3" required>
+        <label for="idade3">Idade:</label>
+        <input type="text" name="idade3" id="idade3" required><br><br>
+        
+        <label for="matricula4">Matricula:</label>
+        <input type="text" name="matricula4" id="matricula4" required>
+        <label for="nome4">Nome:</label>
+        <input type="text" name="nome4" id="nome4" required>
+        <label for="sobrenome4">Sobrenome:</label>
+        <input type="text" name="sobrenome4" id="sobrenome4" required>
+        <label for="idade4">Idade:</label>
+        <input type="text" name="idade4" id="idade4" required><br><br>
+        
+        <input type="submit" name="submit" value="Cadastrar">
+    </form>
+
+    <br>
+    <h2>Listagem de Alunos</h2>
+    <button onclick="location.href='listagem.php?ordem=nome'">Ordem de nome</button>
+    <button onclick="location.href='listagem.php?ordem=matricula'">Ordem de matrícula</button>
+    <button onclick="location.href='listagem.php?ordem=chegada'">Ordem de chegada</button>
+    <button onclick="location.href='listagem.php?ordem=sobrenome'">Sobrenome</button>
+</body>
+</html>
